@@ -13,7 +13,7 @@ namespace Player_and_Team
         
         public void AddPlayer()
         {
-            if (PlayerCount <= 11)
+            if (PlayerCount < 11)
             {
                 Player p = new Player();
                 Console.WriteLine("Enter Player id");
@@ -33,7 +33,7 @@ namespace Player_and_Team
         }
         public void AddPlayer(Player p)
         {
-            if (PlayerCount <= 11)
+            if (PlayerCount < 11)
             {
                 list.Add(p);
                 PlayerCount++;
