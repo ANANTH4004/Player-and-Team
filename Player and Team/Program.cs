@@ -14,14 +14,14 @@ namespace Player_and_Team
             Player p2 = new Player(2,"Varun",22);
             Player p3 = new Player(3,"Nithya",22);
             Player p4 = new Player(4,"Kathija",30);
-            Player p5 = new Player(4,"Kathija",30);
-            Player p6 = new Player(4,"Kathija",30);
-            Player p7 = new Player(4,"Kathija",30);
-            Player p11 = new Player(4,"Kathija",30);
-            Player p8 = new Player(4,"Kathija",30);
-            Player p9 = new Player(4,"Kathija",30);
-            Player p10 = new Player(4,"Kathija",30);
-            Player p12 = new Player(4,"Kathija",30);
+            Player p5 = new Player(5,"Kathija",30);
+            Player p6 = new Player(6,"Kathija",30);
+            Player p7 = new Player(7,"Kathija",30);
+            Player p11 = new Player(8,"Kathija",30);
+            Player p8 = new Player(9,"Kathija",30);
+            Player p9 = new Player(10,"Kathija",30);
+            Player p10 = new Player(11,"Kathija",30);
+            Player p12 = new Player(12,"Kathija",30);
             Team Team1 = new Team();
             Team1.AddPlayer(p1);
             Team1.AddPlayer(p2);
@@ -34,10 +34,11 @@ namespace Player_and_Team
             Team1.AddPlayer(p9);
             Team1.AddPlayer(p10);
             Team1.AddPlayer(p11);
-            Team1.AddPlayer(p11);
-            Team1.AddPlayer();
+           // Team1.AddPlayer(p11);
+           //Team1.AddPlayer();
             Team1.GetPlayer(3);
             Team1.RemovePlayer(2);
+            Team1.GetPlayer(2);
             Team1.AddPlayer();
             Team1.Print();
 
