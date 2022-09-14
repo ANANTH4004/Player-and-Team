@@ -59,11 +59,11 @@ namespace Player_and_Team
             {
                 this.list.Remove(found);
                 PlayerCount--;
-                Console.WriteLine("Player Removed Successfully....");
+                Console.WriteLine($"Player {id} Removed Successfully....");
             }
             else
             {
-                Console.WriteLine("Player Not Found");
+                Console.WriteLine($"Player {id} Not Found");
             }
            // this.list.RemoveAll( rem => rem.PlayerID == id);
         }
@@ -72,7 +72,7 @@ namespace Player_and_Team
             var found = this.list.Find(fo => fo.PlayerID == id);
             if (found != null)
             {
-                Console.WriteLine("Player Found");
+                Console.WriteLine($"Player {id} Found");
                 //foreach (var item in found)
                 //{
                 //    Console.WriteLine($"Player Id : {item.PlayerID} Player Name : {item.PlayerName} Age : {item.Age}");
@@ -81,25 +81,26 @@ namespace Player_and_Team
             }
             else
             {
-                Console.WriteLine("Player Not Found!!");
+                Console.WriteLine($"Player {id} Not Found!!");
             }
         }
         public void GetPlayer(string name)
         {
             
-            var found = this.list.FindAll(fo => fo.PlayerName == name);
+            var found = this.list.Find(fo => fo.PlayerName == name);
             if (found != null)
             {
-                Console.WriteLine("Player Found");
-                foreach (var item in found)
-                {
-                   
-                    Console.WriteLine($"Player Id : {item.PlayerID} Player Name : {item.PlayerName} Age : {item.Age}");
-                }
+                Console.WriteLine($"Player {name} Found");
+                //foreach (var item in found)
+                //{
+
+                //    Console.WriteLine($"Player Id : {item.PlayerID} Player Name : {item.PlayerName} Age : {item.Age}");
+                //}
+                Console.WriteLine($"Player Id : {found.PlayerID} Player Name : {found.PlayerName} Age : {found.Age}");
             }
             else
             {
-                Console.WriteLine("Player Not Found!!");
+                Console.WriteLine($"Player {name} Not Found!!");
             }
         }
     }
